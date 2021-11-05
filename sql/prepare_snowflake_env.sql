@@ -11,7 +11,7 @@ CREATE OR REPLACE STAGE "AGRICULTURE_INSIGHT"."PUBLIC".agriculture_stage
     CREDENTIALS = (AWS_KEY_ID = ' AKIAVFTBAWJ7QQ44VRXO ' AWS_SECRET_KEY = '****************************************')
     FILE_FORMAT = CSV_FILE_FORMAT;
 
-COPY INTO @Agriculture_stage from "AGRICULTURE_DATA_ATLAS"."AGRICULTURE"."DATA_ATLAS"
+COPY INTO @Agriculture_stage from "AGRICULTURE_DATA_ATLAS"."AGRICULTURE"."DATA_ATLAS";
 
 
 -- create Snowflake Star schema

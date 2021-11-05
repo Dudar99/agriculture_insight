@@ -1,4 +1,5 @@
-from metadata import COUNTRY_DIM, ATLAS_TABLE_NAME, DATE_DIM, INDICATOR_DIM, DIM_TABLES_LOCATION, SOURCE_DIM, TOPIC_DIM, \
+from common.settings import COUNTRY_DIM, ATLAS_TABLE_NAME, DATE_DIM, INDICATOR_DIM, DIM_TABLES_LOCATION, SOURCE_DIM, \
+    TOPIC_DIM, \
     UNIT_DIM
 
 
@@ -34,4 +35,6 @@ def ctas_athena(table_metadata: dict):
     return final_sql
 
 
-print(ctas_athena(UNIT_DIM))
+def generate_athena_tables():
+    # CONNECT to Athena using pyathena and execute infrustructure building
+    pass
